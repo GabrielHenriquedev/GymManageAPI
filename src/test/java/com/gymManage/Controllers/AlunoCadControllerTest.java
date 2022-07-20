@@ -43,12 +43,4 @@ public class AlunoCadControllerTest {
         assertEquals( HttpStatus.OK, getAluno);
     }
 
-    @Test
-    void getEmUmAlunoNaoExistenteIdAleatorio() {
-        Random random = new Random();
-        int numeroInteiroAleatorio = random.nextInt(100) + 10;
-        HttpStatus getFicha= AlController.consultar(numeroInteiroAleatorio).getStatusCode();
-        assertEquals( HttpStatus.OK, getFicha);
-    }
-
 }

@@ -34,11 +34,4 @@ public class FichaCadControllerTest {
         assertEquals( HttpStatus.OK, getFicha);
     }
 
-    @Test
-    void getEmUmaFichaExistenteIdaleatorio() {
-        Random random = new Random();
-        int numeroInteiroAleatorio = random.nextInt(100) + 10;
-        HttpStatus getFicha= FhController.consultar(numeroInteiroAleatorio).getStatusCode();
-        assertEquals( HttpStatus.OK, getFicha);
-    }
 }

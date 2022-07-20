@@ -34,14 +34,4 @@ public class ProfessorCadControllerTest {
         assertEquals( HttpStatus.OK, getProfessor);
     }
 
-    @Test
-    void getEmUmProfessorNaoExistenteIdaleatorio() {
-        Random random = new Random();
-        int numeroInteiroAleatorio = random.nextInt(100) + 10;
-        HttpStatus getFicha= PfController.consultar(numeroInteiroAleatorio).getStatusCode();
-        assertEquals( HttpStatus.OK, getFicha);
-    }
-
-
-
 }
