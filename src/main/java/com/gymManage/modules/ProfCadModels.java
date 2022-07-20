@@ -32,6 +32,22 @@ public class ProfCadModels {
     @Column(name = "telefone", length = 100)
     private String telefone;
 
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
     @NotBlank
     @Column(name = "cpf", length = 100)
     private String cpf;
