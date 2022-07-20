@@ -32,10 +32,5 @@ public class AlunoCadControllerTest {
         assertEquals( HttpStatus.OK, getAluno);
     }
 
-    @Test
-    void eParaFalnharPoisOAlunoNaoExite() {
-        HttpStatus getAluno= AlController.consultar(10).getStatusCode();
-        assertEquals( HttpStatus.OK, getAluno);
-    }
 
 }
